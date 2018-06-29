@@ -6,35 +6,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	    
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
-<body onload="loadCurrencies()">
+<body>
 
-	<div class="container main"> 
-		<div class="col-md-4 panel">
-			<!--Header-->
-			<div class="row header">
-				<label>Currency Converter</label>
-			</div>
-			<!--Amount input-->
-			<div class="row">
-				<div class="col-md-2">
-					<label>Amount</label>
+		<div class="container main"> 
+				<div class="col-md-6 panel">
+					<!--Header-->
+					<div class="row header">
+						<label>Currency Converter</label>
+					</div>
+
+				<form id="form">
+					<div class="row">
+						<!--Input-->
+						<div class="col-md-6">
+							<!--Amount From-->
+							<label>Enter Amount</label>
+							<input type="number" class="form-control" id="from_amount">
+						</div>
+						<div class="col-md-6">
+							<!--Amount To-->
+							<label>Exchanged Amount</label>
+							<input type="text" placeholder="Loading..." class="form-control" readonly id="to_amount">
+						</div>
+					</div>
+					<!--Selector-->
+					<div class="row">
+						<div class="col-md-6">
+							<!--SELECT FROM-->
+							<label>Convert From:</label>
+							<select class="form-control" id="from_currency"></select>
+						</div>
+						<div class="col-md-6">
+							<!--SELECT TO-->
+							<label>Convert To:</label>
+							<select class="form-control" id="to_currency"></select>
+						</div>	
+					</div>
+					<input type="submit" value="Convert" class="btn" id="submit">
+				</form>
+
 				</div>
-				<div class="col-md-10">
-					<input type="text" class="form-control" id="amount">
-				</div>
 			</div>
-			<!--Selector-->
-			<div class="row">
-				<div class="col-md-2"><label>From:</label></div>
-				<div class="col-md-4"><select id="from"></select></div>
-				<div class="col-md-2"><label>To:</label></div>
-				<div class="col-md-4"><select id="to"></select></div>	
-			</div>
-		</div>
-	</div>
+		
+
+
+
 
 
 
