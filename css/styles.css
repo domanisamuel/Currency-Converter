@@ -2,10 +2,16 @@
     margin-top: 150px;
 }
 div.row{
-    padding: 10px;
+    padding: 20px;
 }
-input{
-    margin-left: 10px;
+#to_amount{
+    background-color: #ccc;
+}
+.btn{
+    color: #fff;
+    background-color: teal;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .header{
     background-color: teal;
