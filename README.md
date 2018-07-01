@@ -13,6 +13,7 @@ Currency Converter App
 >
 ### To run the application locally
 * You can use "LIVE SERVER" extension in VScode editor if you happen to use VScode editor.
+* You can as well use a server of your choice.
 >
 >---------------------------
 >
