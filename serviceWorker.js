@@ -31,13 +31,13 @@ self.addEventListener('install', function(event) {
 //activate
 self.addEventListener('activate', function(event) {
     event.waitUntil(
-      caches.keys().then(function(cacheNames) {
+      caches.keys().then(function(staticCacheName) {
         return Promise.all(
-          cacheNames.filter(function(cacheName) {
+          staticCacheName.filter(function(staticCacheName) {
             return cacheName.startsWith('currency-') &&
                    !allCaches.includes(cacheName);
-          }).map(function(cacheName) {
-            return caches.delete(cacheName);
+          }).map(function(staticCacheName) {
+            return caches.delete(staticCacheName);
           })
         );
       })
