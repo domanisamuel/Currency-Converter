@@ -1,0 +1,10 @@
+{
+    "name": "Currency Converter",
+    "baseUrl": "https://domanisamuel.github.io/Currency-Converter/",
+    "description": "You can convert your currencies in realtime",
+    "tile": {
+        "iconUrl": "https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Purse-512.png"
+        
+    },
+    "serverUrl": "https://domanisamuel.github.io/Currency-Converter/"
+}
